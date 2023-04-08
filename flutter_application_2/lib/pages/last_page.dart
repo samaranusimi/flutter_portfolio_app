@@ -15,58 +15,79 @@ class Last_Page extends StatelessWidget {
               Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(18),
-                  color: Colors.black54,
+                  color: Colors.black,
                 ),
                 child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
-                        "Skills",
-                        style: TextStyle(
-                            fontSize: 35,
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold),
+                      ElevatedButton(
+                        onPressed: () {},
+                        child: Text(
+                          "Skills",
+                          style: TextStyle(
+                              fontSize: 35,
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        style: ElevatedButton.styleFrom(
+                          textStyle: TextStyle(fontSize: 20),
+                          primary: Colors.black54,
+                        ),
                       )
                     ]),
               ),
               Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(18),
-                  color: Colors.black54,
+                  color: Colors.black,
                 ),
                 child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
-                        "Projects",
-                        style: TextStyle(
-                            fontSize: 35,
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold),
+                      ElevatedButton(
+                        onPressed: () {},
+                        child: Text(
+                          "Projects",
+                          style: TextStyle(
+                              fontSize: 35,
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        style: ElevatedButton.styleFrom(
+                          textStyle: TextStyle(fontSize: 20),
+                          primary: Colors.black54,
+                        ),
                       )
                     ]),
               ),
               Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(18),
-                  color: Colors.black54,
+                  color: Colors.black,
                 ),
                 child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
-                        "Work Experience",
-                        style: TextStyle(
-                            fontSize: 30,
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold),
+                      ElevatedButton(
+                        onPressed: () {},
+                        child: Text(
+                          "Work Experience",
+                          style: TextStyle(
+                              fontSize: 25,
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        style: ElevatedButton.styleFrom(
+                          textStyle: TextStyle(fontSize: 20),
+                          primary: Colors.black54,
+                        ),
                       )
                     ]),
               ),
               Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(18),
-                  color: Colors.black54,
+                  color: Colors.black,
                 ),
                 child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
