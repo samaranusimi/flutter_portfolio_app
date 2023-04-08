@@ -73,7 +73,7 @@ class Last_Page extends StatelessWidget {
                         child: Text(
                           "Work Experience",
                           style: TextStyle(
-                              fontSize: 25,
+                              fontSize: 20,
                               color: Colors.white,
                               fontWeight: FontWeight.bold),
                         ),
