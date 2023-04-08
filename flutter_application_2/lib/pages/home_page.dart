@@ -17,7 +17,10 @@ class Home_Page extends StatelessWidget {
           SizedBox(
             height: 50,
           ),
-          Image.asset("assets/images/p1.jpeg"),
+          CircleAvatar(
+            radius: 120,
+            backgroundImage: AssetImage("assets/images/p1.jpeg"),
+          ),
           SizedBox(
             height: 30,
           ),
@@ -39,7 +42,7 @@ class Home_Page extends StatelessWidget {
           Row(
             children: [
               Text(
-                "About:",
+                "About :",
                 style: TextStyle(
                   fontSize: 30,
                   fontWeight: FontWeight.bold,
@@ -53,7 +56,7 @@ class Home_Page extends StatelessWidget {
           ),
           Text(
             "I am currently pursuing B.Tech Degree in Computer Science and Engineering from SRMIST, Kattankulathur. As a student i am eager to gain experience in your feild and contribute to your organizaton. ",
-            style: TextStyle(fontSize: 20),
+            style: TextStyle(fontSize: 22),
           ),
           SizedBox(
             height: 190,
