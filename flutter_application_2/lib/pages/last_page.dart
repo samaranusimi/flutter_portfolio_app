@@ -71,9 +71,9 @@ class Last_Page extends StatelessWidget {
                       ElevatedButton(
                         onPressed: () {},
                         child: Text(
-                          "Work Experience",
+                          "Experience",
                           style: TextStyle(
-                              fontSize: 20,
+                              fontSize: 27,
                               color: Colors.white,
                               fontWeight: FontWeight.bold),
                         ),

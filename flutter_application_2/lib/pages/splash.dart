@@ -18,7 +18,7 @@ class _Splash_ScreenState extends State<Splash_Screen> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(seconds: 3), () {
+    Timer(Duration(seconds: 2), () {
       Navigator.of(context).push(
           MaterialPageRoute(builder: (BuildContext context) => Home_Page()));
     });
@@ -27,6 +27,7 @@ class _Splash_ScreenState extends State<Splash_Screen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black12,
       body: SafeArea(
           child: Center(
         child: Image.asset(
