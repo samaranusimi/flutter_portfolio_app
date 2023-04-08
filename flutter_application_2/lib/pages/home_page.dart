@@ -1,21 +1,23 @@
 import 'package:flutter/material.dart';
 
+import 'last_page.dart';
+
 class Home_Page extends StatelessWidget {
   const Home_Page({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          "Protfolio",
+        appBar: AppBar(
+          title: Text(
+            "Protfolio",
+          ),
         ),
-      ),
-      body: Column(
-        children: [
+        body: Column(children: [
           SizedBox(
             height: 50,
           ),
+          Image.asset("assets/images/p1.jpeg"),
           SizedBox(
             height: 30,
           ),
@@ -50,18 +52,26 @@ class Home_Page extends StatelessWidget {
             height: 5,
           ),
           Text(
-            "I am currently pursuing B.Tech Degree in Computer Science and Engineering from SRMIST, Kattankulathur.",
+            "I am currently pursuing B.Tech Degree in Computer Science and Engineering from SRMIST, Kattankulathur. As a student i am eager to gain experience in your feild and contribute to your organizaton. ",
             style: TextStyle(fontSize: 20),
           ),
           SizedBox(
-            height: 20,
+            height: 190,
           ),
           ElevatedButton(
-            child: Text("Next"),
-            onPressed: () {},
-          )
-        ],
-      ),
-    );
+            child: Text(
+              "Next",
+              style: TextStyle(color: Colors.black87),
+            ),
+            onPressed: () {
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: (BuildContext context) => Last_Page()));
+            },
+            style: ElevatedButton.styleFrom(
+              textStyle: TextStyle(fontSize: 20),
+              primary: Colors.amber[900],
+            ),
+          ),
+        ]));
   }
 }
