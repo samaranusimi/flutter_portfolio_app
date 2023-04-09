@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_2/pages/contacts.dart';
+import 'package:flutter_application_2/pages/experinece.dart';
+import 'package:flutter_application_2/pages/projects.dart';
+import 'package:flutter_application_2/pages/skills.dart';
 
 class Last_Page extends StatelessWidget {
   const Last_Page({super.key});
@@ -9,7 +13,7 @@ class Last_Page extends StatelessWidget {
       appBar: AppBar(),
       body: Container(
           child: Padding(
-        padding: EdgeInsets.all(15),
+        padding: EdgeInsets.symmetric(horizontal: 10, vertical: 140),
         child: GridView(
             children: [
               Container(
@@ -21,7 +25,10 @@ class Last_Page extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (BuildContext context) => Skills()));
+                        },
                         child: Text(
                           "Skills",
                           style: TextStyle(
@@ -45,7 +52,10 @@ class Last_Page extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (BuildContext context) => Projects()));
+                        },
                         child: Text(
                           "Projects",
                           style: TextStyle(
@@ -69,7 +79,10 @@ class Last_Page extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (BuildContext context) => Experience()));
+                        },
                         child: Text(
                           "Experience",
                           style: TextStyle(
@@ -93,7 +106,10 @@ class Last_Page extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (BuildContext context) => Contacts()));
+                        },
                         child: Text(
                           "Contact",
                           style: TextStyle(

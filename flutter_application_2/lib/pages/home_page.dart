@@ -11,6 +11,7 @@ class Home_Page extends StatelessWidget {
         appBar: AppBar(
           title: Text(
             "Protfolio",
+            style: TextStyle(fontWeight: FontWeight.bold),
           ),
         ),
         body: Column(children: [
