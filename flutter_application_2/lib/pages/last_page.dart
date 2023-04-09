@@ -127,7 +127,8 @@ class Last_Page extends StatelessWidget {
             ],
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2, mainAxisSpacing: 20, crossAxisSpacing: 20)),
-      )),
+      )
+    ),
     );
   }
 }

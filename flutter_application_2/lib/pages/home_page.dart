@@ -76,6 +76,7 @@ class Home_Page extends StatelessWidget {
               primary: Colors.amber[900],
             ),
           ),
-        ]));
+        ])
+        );
   }
 }
