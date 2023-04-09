@@ -12,16 +12,22 @@ class Skills extends StatelessWidget {
         style: TextStyle(fontWeight: FontWeight.bold),
       )),
       body: Container(
+        decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage('assets/images/p3.avif'), fit: BoxFit.cover)),
         child: Column(
           children: [
             SizedBox(
-              height: 50,
+              height: 130,
             ),
             Row(
               children: [
                 Text(
                   "C++",
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
                 ),
               ],
             ),
@@ -33,9 +39,9 @@ class Skills extends StatelessWidget {
                 Text(
                   "C",
                   style: TextStyle(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                  ),
+                      fontSize: 30,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
                   textAlign: TextAlign.left,
                 ),
               ],
@@ -46,7 +52,10 @@ class Skills extends StatelessWidget {
             Row(children: [
               Text(
                 "App Development",
-                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white),
                 textAlign: TextAlign.left,
               )
             ]),
