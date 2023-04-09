@@ -11,7 +11,23 @@ class Contacts extends StatelessWidget {
         "Contacts",
         style: TextStyle(fontWeight: FontWeight.bold),
       )),
-     
+      body: Container(
+        child: Padding(
+          padding: EdgeInsets.symmetric(vertical: 100, horizontal: 20),
+          child: GridView(
+              children: [
+                ElevatedButton(
+                    onPressed: () {},
+                    child: Text("Github",
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 40)))
+              ],
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  mainAxisSpacing: 20,
+                  crossAxisSpacing: 20)),
+        ),
+      ),
     );
   }
 }
