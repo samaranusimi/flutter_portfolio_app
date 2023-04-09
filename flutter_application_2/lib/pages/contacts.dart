@@ -18,37 +18,44 @@ class Contacts extends StatelessWidget {
       )),
       body: Container(
         child: Padding(
-          padding: EdgeInsets.symmetric(vertical: 100, horizontal: 20),
+          padding: EdgeInsets.symmetric(vertical: 100, horizontal: 10),
           child: GridView(
               children: [
                 Container(
-                    child: Link(
-                  target: LinkTarget.self,
-                  uri: Uri.parse("https://github.com/samaranusimi"),
-                  builder: (context, followLink) => ElevatedButton(
-                      onPressed: followLink,
-                      child: Text("Github",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 40))),
-                ))
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(18),
+                      color: Colors.black,
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        ElevatedButton(
+                            onPressed: () {},
+                            child: Text("Github",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 40))),
+                      ],
+                    )),
                 Container(
-        child: Padding(
-          padding: EdgeInsets.symmetric(vertical: 100, horizontal: 20),
-          child: GridView(
-              children: [
-                Container(
-                    child: Link(
-                  target: LinkTarget.self,
-                  uri: Uri.parse("https://github.com/samaranusimi"),
-                  builder: (context, followLink) => ElevatedButton(
-                      onPressed: followLink,
-                      child: Text("Linkedin",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 40))),
-                ))
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(18),
+                      color: Colors.black,
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        ElevatedButton(
+                            onPressed: () {},
+                            child: Text("Linkedin",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 40))),
+                      ],
+                    ))
               ],
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 2,
+                  crossAxisCount: 1,
                   mainAxisSpacing: 20,
                   crossAxisSpacing: 20)),
         ),
