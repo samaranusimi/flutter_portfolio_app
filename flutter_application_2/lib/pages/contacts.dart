@@ -1,4 +1,3 @@
-import 'dart:html';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -18,7 +17,7 @@ class Contacts extends StatelessWidget {
       )),
       body: Container(
         child: Padding(
-          padding: EdgeInsets.symmetric(vertical: 100, horizontal: 10),
+          padding: EdgeInsets.symmetric(vertical: 150, horizontal: 10),
           child: GridView(
               children: [
                 Container(
@@ -26,36 +25,44 @@ class Contacts extends StatelessWidget {
                       borderRadius: BorderRadius.circular(18),
                       color: Colors.black,
                     ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        ElevatedButton(
-                            onPressed: () {},
-                            child: Text("Github",
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 40))),
-                      ],
+                    child: Link(
+                      uri: Uri.parse("https://github.com/samaranusimi"),
+                      builder: (context, followLink) => ElevatedButton(
+                        onPressed: followLink,
+                        child: Text("Github",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 30,
+                            )),
+                        style: ElevatedButton.styleFrom(
+                          textStyle: TextStyle(fontSize: 20),
+                          primary: Colors.black54,
+                        ),
+                      ),
                     )),
                 Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(18),
-                      color: Colors.black,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(18),
+                    color: Colors.black,
+                  ),
+                  child: Link(
+                    uri: Uri.parse(
+                        "https://www.linkedin.com/in/samar-anusimi-390986249/"),
+                    builder: (context, followLink) => ElevatedButton(
+                      onPressed: followLink,
+                      child: Text("Linkedin",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 30)),
+                      style: ElevatedButton.styleFrom(
+                        textStyle: TextStyle(fontSize: 20),
+                        primary: Colors.black54,
+                      ),
                     ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        ElevatedButton(
-                            onPressed: () {},
-                            child: Text("Linkedin",
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 40))),
-                      ],
-                    ))
+                  ),
+                )
               ],
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 1,
+                  crossAxisCount: 2,
                   mainAxisSpacing: 20,
                   crossAxisSpacing: 20)),
         ),
