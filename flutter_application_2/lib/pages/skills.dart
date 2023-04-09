@@ -20,7 +20,7 @@ class Skills extends StatelessWidget {
             children: [
               Text(
                 "C++",
-                style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
               ),
             ],
           ),
@@ -32,7 +32,7 @@ class Skills extends StatelessWidget {
               Text(
                 "C",
                 style: TextStyle(
-                  fontSize: 50,
+                  fontSize: 30,
                   fontWeight: FontWeight.bold,
                 ),
                 textAlign: TextAlign.left,

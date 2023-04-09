@@ -11,6 +11,7 @@ class Contacts extends StatelessWidget {
         "Contacts",
         style: TextStyle(fontWeight: FontWeight.bold),
       )),
+     
     );
   }
 }
