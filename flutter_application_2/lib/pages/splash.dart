@@ -28,7 +28,8 @@ class _Splash_ScreenState extends State<Splash_Screen> {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.black12,
-        body: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+        body: Row(mainAxisAlignment: MainAxisAlignment.center,
+         children: [
           Align(alignment: Alignment.center),
           Image.asset(
             "assets/images/logo.png",

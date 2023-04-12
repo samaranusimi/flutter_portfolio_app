@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:url_launcher/link.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -36,7 +35,6 @@ class Contacts extends StatelessWidget {
                               fontSize: 30,
                             )),
                         style: ElevatedButton.styleFrom(
-                          textStyle: TextStyle(fontSize: 20),
                           primary: Colors.black54,
                         ),
                       ),
@@ -55,7 +53,6 @@ class Contacts extends StatelessWidget {
                           style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 30)),
                       style: ElevatedButton.styleFrom(
-                        textStyle: TextStyle(fontSize: 20),
                         primary: Colors.black54,
                       ),
                     ),

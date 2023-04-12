@@ -63,7 +63,7 @@ class Home_Page extends StatelessWidget {
               height: 5,
             ),
             Text(
-              "I am currently pursuing B.Tech Degree in Computer Science and Engineering from SRMIST, Kattankulathur. As a student i am eager to gain experience in your feild and contribute to your organizaton. ",
+              "I am currently pursuing B.Tech Degree in Computer Science and Engineering from SRMIST, Kattankulathur. As a student i am eager to gain experience in your field and contribute to your organizaton. ",
               style: TextStyle(fontSize: 22),
             ),
             SizedBox(
@@ -79,7 +79,6 @@ class Home_Page extends StatelessWidget {
                     builder: (BuildContext context) => Last_Page()));
               },
               style: ElevatedButton.styleFrom(
-                textStyle: TextStyle(fontSize: 20),
                 primary: Colors.amber[900],
               ),
             ),

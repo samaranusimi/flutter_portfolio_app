@@ -44,7 +44,6 @@ class Last_Page extends StatelessWidget {
                                   fontWeight: FontWeight.bold),
                             ),
                             style: ElevatedButton.styleFrom(
-                              textStyle: TextStyle(fontSize: 20),
                               primary: Colors.black54,
                             ),
                           )
@@ -72,7 +71,6 @@ class Last_Page extends StatelessWidget {
                                   fontWeight: FontWeight.bold),
                             ),
                             style: ElevatedButton.styleFrom(
-                              textStyle: TextStyle(fontSize: 20),
                               primary: Colors.black54,
                             ),
                           )
@@ -100,7 +98,6 @@ class Last_Page extends StatelessWidget {
                                   fontWeight: FontWeight.bold),
                             ),
                             style: ElevatedButton.styleFrom(
-                              textStyle: TextStyle(fontSize: 20),
                               primary: Colors.black54,
                             ),
                           )
@@ -128,7 +125,6 @@ class Last_Page extends StatelessWidget {
                                   fontWeight: FontWeight.bold),
                             ),
                             style: ElevatedButton.styleFrom(
-                              textStyle: TextStyle(fontSize: 20),
                               primary: Colors.black54,
                             ),
                           )
