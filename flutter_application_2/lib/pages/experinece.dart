@@ -11,8 +11,24 @@ class Experience extends StatelessWidget {
         "Experience",
         style: TextStyle(fontWeight: FontWeight.bold),
       )),
-      body: Column(
-        children: [SizedBox(height: 40), Text("AL-ML Virtual Internship")],
+      body: Container(
+        decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage('assets/images/exp.jpeg'),
+                fit: BoxFit.cover)),
+        child: Column(
+          children: [
+            SizedBox(height: 40),
+            Row(
+              children: [
+                Text(
+                  "AL-ML Virtual Internship",
+                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                )
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
