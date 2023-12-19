@@ -28,8 +28,7 @@ class _Splash_ScreenState extends State<Splash_Screen> {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Colors.black12,
-        body: Row(mainAxisAlignment: MainAxisAlignment.center,
-         children: [
+        body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           Align(alignment: Alignment.center),
           Image.asset(
             "assets/images/logo.png",
@@ -37,7 +36,7 @@ class _Splash_ScreenState extends State<Splash_Screen> {
             width: 150,
           ),
           SizedBox(
-            height: 500,
+            height: 50,
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -46,7 +45,7 @@ class _Splash_ScreenState extends State<Splash_Screen> {
               Text(
                 "Portfolio App",
                 style: TextStyle(
-                    fontSize: 20,
+                    fontSize: 30,
                     fontWeight: FontWeight.bold,
                     color: Colors.yellow),
               )
