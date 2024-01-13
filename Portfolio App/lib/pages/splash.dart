@@ -35,9 +35,6 @@ class _Splash_ScreenState extends State<Splash_Screen> {
             height: 150,
             width: 150,
           ),
-          SizedBox(
-            height: 50,
-          ),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
