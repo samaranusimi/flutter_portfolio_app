@@ -64,6 +64,7 @@ class _Splash_ScreenState extends State<Splash_Screen> {
               "Portfolio App",
               style: TextStyle(
                 fontSize: screenWidth * 0.075,
+                fontWeight: FontWeight.bold,
                 color: Colors.white,
               ),
             ),
